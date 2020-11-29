@@ -24,7 +24,11 @@ Route::get('/', function () {
 Route::get('/home', [HomeController::class, 'index']);
 
 // video chat
-Route::get('/video', [StreamController::class, 'stream']);
+Route::get('/video', [StreamController::class, 'index']);
 
 // chat
 Route::get('/chat', [ChatController::class, 'index']);
+
+
+// video stream
+Route::get('/stream', [StreamController::class, 'stream']);
