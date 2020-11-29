@@ -1,7 +1,11 @@
+<!-- TEMPLATE HTML -->
 
-<v-btn
-  elevation="2"
-></v-btn>
+
+<!-- FINE TEMPLATE HTML -->
+
+
+
+<!-- VUE -->
 
 @section("vue")
 <script>
