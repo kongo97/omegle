@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\StreamController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\ChatController;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,6 +20,11 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+// home page
 Route::get('/home', [HomeController::class, 'index']);
 
+// video chat
 Route::get('/video', [StreamController::class, 'stream']);
+
+// chat
+Route::get('/chat', [ChatController::class, 'index']);
