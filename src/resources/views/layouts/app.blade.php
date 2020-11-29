@@ -22,7 +22,9 @@
 
                 @include('navbar')
 
-                @include($page)
+                <v-container>
+                    @include($page)
+                </v-container>
 
                 </v-main>
             </v-app>
